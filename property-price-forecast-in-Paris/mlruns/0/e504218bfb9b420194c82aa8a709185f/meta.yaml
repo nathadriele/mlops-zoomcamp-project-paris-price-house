@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/admin/downloads/mlops_project/mlruns/0/e504218bfb9b420194c82aa8a709185f/artifacts
+end_time: 1721592281832
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e504218bfb9b420194c82aa8a709185f
+run_name: unruly-horse-742
+run_uuid: e504218bfb9b420194c82aa8a709185f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721592226619
+status: 3
+tags: []
+user_id: admin

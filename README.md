@@ -84,7 +84,7 @@ All attributes are numeric variables and are listed below:
 
 ------------------------------------------------
 
-### Pre-requisites and Frameworks and Tools Used
+### Prerequisites and Description of selected Frameworks and Tools
 To successfully execute this MLOps project focused on predicting house prices in Paris, the following prerequisites and tools are required:
 
 - `Git`: Used for version control to manage and track changes in the project codebase, facilitating collaboration and continuous integration.
@@ -203,7 +203,7 @@ This will run tests to ensure the API is functioning correctly.
 ![prefect 1](https://github.com/user-attachments/assets/8adcb49b-3b9d-474e-a1fb-0e28bcbe528e)
 
 --------------------------------------------------
-### Model - Execution Result
+### Model Execution Result
 
 ![model1](https://github.com/user-attachments/assets/522fee3c-ff6d-4099-adee-a75d578dec43)
 
@@ -221,13 +221,16 @@ This will run tests to ensure the API is functioning correctly.
 
 ![mdel8](https://github.com/user-attachments/assets/7e79780c-7be1-47de-ba4f-14667b5ba182)
 
-### Grafana - Monitoring and Observability
+### Monitoring and Observability with Grafana
 
 ![grafana](https://github.com/user-attachments/assets/f77e9d99-1ff0-4897-be2d-1171b0101b85)
 
 --------------------------------------------------
 
 ### Deployment vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app
+
+![Captura de tela 2024-07-22 182910](https://github.com/user-attachments/assets/82243659-6852-4618-a66f-6d66b3f7c068)
+
 The project is deployed on Vercel, making it easily accessible for users. The deployment ensures that users can input property details through the frontend and get real-time price predictions.
 
 ### How to Use app vercel "Property Price Forecast in Paris"
@@ -257,16 +260,12 @@ This project serves as an excellent example of applying MLOps principles to a re
 - ✅ Model deployment: The model deployment code is containerized and can be deployed to the cloud.
 - ✅ Model monitoring: Basic model monitoring that calculates and reports metrics.
 - ✅ Reproducibility: Instructions are clear, it's easy to run the code, and it works. The versions for all the dependencies are specified.
-- ✅ Visualização do projeto prático no Vercel.
+- ✅ Visualization: Visualization of the practical project in Vercel.
 
 ---------------------------------------------------
 
 ### Acknowledgments
 This project was developed as part of the MLOps Zoomcamp course by DataTalks.Club. Special thanks to the course instructors and the community for their support and guidance.
-
-
-
-
 
 
 

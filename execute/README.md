@@ -1,39 +1,66 @@
-**Paris Price House App**
-==========================
+**README.md**
 
-This is a Next.js and Python based ML application for house price prediction in Paris, France.
+**Project Overview**
+================
+
+This project is a machine learning workflow that trains a model on the Paris Housing dataset, deploys an API, and schedules a Prefect flow to run the model. The project uses MLflow to track experiments and store artifacts.
 
 **Getting Started**
 ---------------
 
 ### Prerequisites
 
-* Node.js installed on your machine
-* Python installed on your machine
+* Python 3.x
+* MLflow
+* Prefect
+* SQLite
 
-### Installation
+### Running the Project
 
-1. Create a new Next.js app using the latest version of `create-next-app`:
-```
-npx create-next-app@latest paris-price-house
-```
-2. Change into the newly created app directory:
-```
-cd paris-price-house
-```
-3. Install Axios, a popular HTTP client library:
-```
-npm install axios
-```
+1. **Start MLflow Server**
 
-### Running the App
+Run the following command to start the MLflow server with a SQLite backend store and default artifact root:
+```
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 0.0.0.0
+```
+This will start the MLflow server, which will track experiments and store artifacts in the `mlruns` directory.
 
-1. Run the Python script that fetches data from an external API:
+2. **Train Paris Housing Model**
+
+Run the following command to train the Paris Housing model:
 ```
-python app.py
+python train_paris_housing_model
 ```
-2. Start the Next.js development server:
+This will train a machine learning model on the Paris Housing dataset and log the experiment to MLflow.
+
+3. **Deploy Paris Housing API**
+
+Run the following command to deploy the Paris Housing API:
 ```
-npx next
+python paris_housing_api
 ```
-This will start the development server and make the app available at `http://localhost:3000`.
+This will deploy a REST API that serves the trained model.
+
+4. **Start Prefect Server**
+
+Run the following command to start the Prefect server:
+```
+python prefect server start
+```
+This will start the Prefect server, which will schedule and run the Prefect flow.
+
+5. **Run Paris Housing Prefect Flow**
+
+Run the following command to run the Paris Housing Prefect flow:
+```
+python paris_housing_prefect_flow
+```
+This will schedule and run the Prefect flow, which will execute the trained model.
+
+6. **Run Tests**
+
+Run the following command to run tests for the Paris Housing API:
+```
+python tests/test_paris_housing_api
+```
+This will run tests to ensure the API is functioning correctly.

@@ -56,6 +56,18 @@ Set up an api to use PREFECT using the command prefect config set PREFECT_API_UR
 
 ![prefect 2](https://github.com/user-attachments/assets/b51fb1f9-ca7c-4a85-8c14-fda1f64d826d)
 
+Use the deployment tab to schedule runs to train or deploy the model.
+
+### How to deploy the model?
+Two types of deployment are provided.
+
+One is using simple model's pickle file, FLASK API and Docker.
+Second way is to use the Models from Model registry and deploy it using Docker file.
+Docker images are provided in both the ways which can be easily used to deploy the model at any platform of your choice.
+
+### Model Monitoring
+As the dataset used in this problem statement is of static nature, Drift is checked for in test dataset with respect to training dataset. The code and visualizations for the same are available in 'Monitoring' folder.
+
 ![prefect 1](https://github.com/user-attachments/assets/80ba1abd-ebe3-4886-98f3-328b84ba5cd9)
 
 --------------------------------------------------
@@ -66,10 +78,8 @@ The project has been structured with the following folders and files:
 - .github: contains the CI/CD files (GitHub Actions)
 - data: dataset and test sample for testing the model
 - integration_tests: prediction integration test with docker-compose
-- lambda: test of the lambda handler with and w/o docker
 - model: full pipeline from preprocessing to prediction and monitoring using MLflow, Prefect, Grafana, Adminer, and docker-compose
 - notebooks: EDA and Modeling performed at the beginning of the project to establish a baseline
-- tests: unit tests
 - makefile: set of execution tasks
 - pyproject.toml: linting and formatting
 - setup.py: project installation module

@@ -225,7 +225,6 @@ This will run tests to ensure the API is functioning correctly.
 
 ![grafana](https://github.com/user-attachments/assets/f77e9d99-1ff0-4897-be2d-1171b0101b85)
 
-
 --------------------------------------------------
 
 ### Deployment vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app
@@ -238,6 +237,8 @@ The project is deployed on Vercel, making it easily accessible for users. The de
 - 4. After filling in all the fields, click on the “Estimate Price” button to obtain the predicted price of the property.
 - 5. View the results: The predicted price will be displayed on the screen, providing an estimate based on the input data. Example: "Forecasted Price: €557642.1".
 - 6. Click on the "Clear Fields" button so that all fields are reset.
+ 
+--------------------------------------------------
 
 ### Importance of the Project
 Predicting property prices accurately is crucial for various stakeholders in the real estate market. This project leverages machine learning to provide reliable price estimates, which can help:

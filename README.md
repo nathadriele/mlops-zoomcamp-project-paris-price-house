@@ -105,90 +105,126 @@ To successfully execute this MLOps project focused on predicting house prices in
 - `Vercel`: A cloud platform used for hosting and deploying web applications, ensuring the deployment and scalability of the project's web components.
 
 ------------------------------------------------
-### Project Execution 
+### Paris Price House App
 
-### Clone the Repository mlops-zoomcamp-project-paris-price-house
-`git clone https://github.com/nathadriele/mlops-zoomcamp-project-paris-price-house.git
-cd mlops-zoomcamp-project-paris-price-house`
+This is a Next.js and Python based ML application for house price prediction in Paris, France.
 
-### Create and Activate the Virtual Environment
-This requires Anaconda Environment
+**Getting Started**
+---------------
 
-`conda create -n project-paris-price-house python=3.10`
-`conda activate project-paris-price-house`
+### Prerequisites
 
-If you don't have pip installed:
+* Node.js installed on your machine
+* Python installed on your machine
 
-`conda install pip`
+### Installation
 
-### Install All Dependencies
-`pip install -r requirements.txt`
+1. Create a new Next.js app using the latest version of `create-next-app`:
+```
+npx create-next-app@latest paris-price-house
+```
+2. Change into the newly created app directory:
+```
+cd paris-price-house
+```
+3. Install Axios, a popular HTTP client library:
+```
+npm install axios
+```
 
-### Data Exploration and Preprocessing
-Start the model_to_predict_property_prices_paris.ipynb notebook with Jupyter Notebook:
+### Running the App
 
-`jupyter notebook`
-
-### Model Deployment
-Start the Flask server to deploy the model:
-
-`python app.py`
-
-### Create a New Next.js Project
-This requires Node.js
-
-`npx create-next-app@latest project-paris-price-house`
-
-This will create a new Next.js project in a directory called project-paris-price-house.
-
-### Change to the Project Directory
-`cd project-paris-price-house`
-
-### Install Required Dependencies, Including Axios
-`npm install axios`
-
-### Running the Application
-1. Download the `app.py` and `page.tsx` Files
-
-Ensure that you have downloaded the `app.py` and `page.tsx` files into the `project-paris-price-house` folder.
-
-2. Run the Python Script
-
-This script will perform the necessary calculations and provide the predictions.
-
-`python app.py`
-
-3. Start the Next.js Development Server
-
-`npx next`
-
-This will start the development server and make the application available at http://localhost:3000.
+1. Run the Python script that fetches data from an external API:
+```
+python app.py
+```
+2. Start the Next.js development server:
+```
+npx next
+```
+This will start the development server and make the app available at `http://localhost:3000`.
 
 ------------------------------------------------
-### MlFlow
 
-The image shows a representation of the MLflow lifecycle. The main components include Experiments, Models, and the Registry. Highlights integration with various machine learning libraries and frameworks.
+### Running the Project MLflow
 
-![mlflow](https://github.com/user-attachments/assets/e3701b0c-521a-4c94-9b5e-282bb979a290)
+![mlflow](https://github.com/user-attachments/assets/fe4f00e1-a100-4828-806c-31ae2bbf0773)
+
+1. **Start MLflow Server**
+
+Run the following command to start the MLflow server with a SQLite backend store and default artifact root:
+```
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 0.0.0.0
+```
+This will start the MLflow server, which will track experiments and store artifacts in the `mlruns` directory.
+
+2. **Train Paris Housing Model**
+
+Run the following command to train the Paris Housing model:
+```
+python train_paris_housing_model
+```
+This will train a machine learning model on the Paris Housing dataset and log the experiment to MLflow.
+
+3. **Deploy Paris Housing API**
+
+Run the following command to deploy the Paris Housing API:
+```
+python paris_housing_api
+```
+This will deploy a REST API that serves the trained model.
+
+4. **Start Prefect Server**
+
+Run the following command to start the Prefect server:
+```
+python prefect server start
+```
+This will start the Prefect server, which will schedule and run the Prefect flow.
+
+5. **Run Paris Housing Prefect Flow**
+
+Run the following command to run the Paris Housing Prefect flow:
+```
+python paris_housing_prefect_flow
+```
+This will schedule and run the Prefect flow, which will execute the trained model.
+
+6. **Run Tests**
+
+Run the following command to run tests for the Paris Housing API:
+```
+python tests/test_paris_housing_api
+```
+This will run tests to ensure the API is functioning correctly.
+
+![prefect 2](https://github.com/user-attachments/assets/3cbd8e7c-fe19-4f22-9edf-8fe4af8278ba)
+
+![prefect 1](https://github.com/user-attachments/assets/8adcb49b-3b9d-474e-a1fb-0e28bcbe528e)
 
 --------------------------------------------------
+### Model - Execution Result
 
-### Prefect for Model Orchestration
+![model1](https://github.com/user-attachments/assets/522fee3c-ff6d-4099-adee-a75d578dec43)
 
-This image is related to the Prefect workflow. Shows a hierarchical structure of tasks within the pipeline. The structure indicates the dependency between different tasks and the order of execution.
+![model2](https://github.com/user-attachments/assets/2ad679f2-5a27-4dd4-be31-01cc061026ce)
 
-![prefect 2](https://github.com/user-attachments/assets/d46cc1e7-1a73-4aa1-b7c9-06b246598731)
+![model3](https://github.com/user-attachments/assets/a5919f7c-46bf-4bbf-b1f9-3c25cd80a8a4)
 
-### Using Flask API and Docker
-- Deploy the model using a simple model's pickle file.
-- Create a Flask API to serve the model.
-- Use Docker to containerize the Flask application.
+![model4](https://github.com/user-attachments/assets/3ef7f8a2-e29c-49e7-b8c6-6359279e5693)
 
-### Model Monitoring
+![mode5](https://github.com/user-attachments/assets/784b3b9f-410e-4633-b5b9-273f0a9730cf)
 
-The image shows the workflow diagram with Prefect. Shows a data pipeline with steps including extraction, transformation, validation, and loading. There are arrows indicating the sequence of operations and decisions in the workflow.
+![model6](https://github.com/user-attachments/assets/8df18004-0309-4a50-ab3a-c63f32dd2c2a)
 
-![prefect 1](https://github.com/user-attachments/assets/a0e161ce-b18b-4d76-b75b-af3c05ed0aea)
+![model7](https://github.com/user-attachments/assets/59ce62de-857f-47ff-8ce5-7899570c120c)
+
+![mdel8](https://github.com/user-attachments/assets/7e79780c-7be1-47de-ba4f-14667b5ba182)
+
+### Grafana - Monitoring and Observability
+
+![grafana](https://github.com/user-attachments/assets/f77e9d99-1ff0-4897-be2d-1171b0101b85)
+
 
 --------------------------------------------------
 
@@ -196,12 +232,12 @@ The image shows the workflow diagram with Prefect. Shows a data pipeline with st
 The project is deployed on Vercel, making it easily accessible for users. The deployment ensures that users can input property details through the frontend and get real-time price predictions.
 
 ### How to Use app vercel "Property Price Forecast in Paris"
-1. Fill in all fields with property information: Enter information about the property in the input fields provided in the interface. Only positive numbers are allowed.
-2. For fields where there is no information to be entered, they must be filled in with 0, indicating the absence.
-3. If any field is not filled in, clicking the "Estimate Price" button will return the alert "Please fill in all fields to get a forecast!"
-4. After filling in all the fields, click on the “Estimate Price” button to obtain the predicted price of the property.
-5. View the results: The predicted price will be displayed on the screen, providing an estimate based on the input data. Example: "Forecasted Price: €557642.1".
-6. Click on the "Clear Fields" button so that all fields are reset.
+- 1. Fill in all fields with property information: Enter information about the property in the input fields provided in the interface. Only positive numbers are allowed.
+- 2. For fields where there is no information to be entered, they must be filled in with 0, indicating the absence.
+- 3. If any field is not filled in, clicking the "Estimate Price" button will return the alert "Please fill in all fields to get a forecast!"
+- 4. After filling in all the fields, click on the “Estimate Price” button to obtain the predicted price of the property.
+- 5. View the results: The predicted price will be displayed on the screen, providing an estimate based on the input data. Example: "Forecasted Price: €557642.1".
+- 6. Click on the "Clear Fields" button so that all fields are reset.
 
 ### Importance of the Project
 Predicting property prices accurately is crucial for various stakeholders in the real estate market. This project leverages machine learning to provide reliable price estimates, which can help:

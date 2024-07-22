@@ -1,0 +1,31 @@
+boltons @ file:///C:/b/abs_707eo7c09t/croot/boltons_1677628723117/work
+brotlipy==0.7.0
+certifi @ file:///C:/b/abs_85o_6fm0se/croot/certifi_1671487778835/work/certifi
+cffi @ file:///C:/b/abs_49n3v2hyhr/croot/cffi_1670423218144/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
+conda==23.3.1
+conda-content-trust @ file:///C:/Windows/TEMP/abs_4589313d-fc62-4ccc-81c0-b801b4449e833j1ajrwu/croots/recipe/conda-content-trust_1658126379362/work
+conda-package-handling @ file:///C:/b/abs_fcga8w0uem/croot/conda-package-handling_1672865024290/work
+conda_package_streaming @ file:///C:/b/abs_0e5n5hdal3/croot/conda-package-streaming_1670508162902/work
+cryptography @ file:///C:/b/abs_8ecplyc3n2/croot/cryptography_1677533105000/work
+idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
+jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
+jsonpointer==2.1
+menuinst @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_455sf5o0ct/croots/recipe/menuinst_1661805970842/work
+packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
+pluggy @ file:///C:/ci/pluggy_1648042746254/work
+pycosat @ file:///C:/b/abs_4b1rrw8pn9/croot/pycosat_1666807711599/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pyOpenSSL @ file:///C:/b/abs_552w85x1jz/croot/pyopenssl_1677607703691/work
+PySocks @ file:///C:/ci_310/pysocks_1642089375450/work
+requests @ file:///C:/b/abs_80_edxtvhu/croot/requests_1678709752318/work
+ruamel.yaml @ file:///C:/b/abs_30ee5qbthd/croot/ruamel.yaml_1666304562000/work
+ruamel.yaml.clib @ file:///C:/b/abs_aarblxbilo/croot/ruamel.yaml.clib_1666302270884/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+toolz @ file:///C:/b/abs_cfvk6rc40d/croot/toolz_1667464080130/work
+tqdm @ file:///C:/b/abs_f76j9hg7pv/croot/tqdm_1679561871187/work
+urllib3 @ file:///C:/b/abs_3ce53vrdcr/croot/urllib3_1680254693505/work
+win-inet-pton @ file:///C:/ci_310/win_inet_pton_1642658466512/work
+wincertstore==0.2
+zstandard==0.19.0

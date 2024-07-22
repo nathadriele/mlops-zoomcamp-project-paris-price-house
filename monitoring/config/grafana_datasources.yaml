@@ -1,0 +1,13 @@
+apiVersion: 1.0
+
+datasources:
+  - name: PostgreSQL
+    type: postgres
+    access: proxy
+    url: db:5432
+    database: test
+    user: postgres
+    secureJsonData:
+      password: '3099'
+    jsonData:
+      sslmode: 'disable'

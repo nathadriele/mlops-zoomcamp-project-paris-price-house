@@ -1,0 +1,46 @@
+version: '3'
+
+# Definição de volumes persistentes.
+volumes:
+  grafana_data: {}
+
+# Definição de redes.
+networks:
+  front-tier:
+  back-tier:
+
+services:
+  # Serviço de banco de dados Postgres.
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 3099
+    ports: 
+      - "5432:5432"
+    networks:
+      - back-tier 
+
+  # Serviço Adminer para gerenciar o banco de dados.
+  adminer:
+    image: adminer
+    restart: always 
+    ports: 
+      - "8080:8080"
+    networks:
+      - back-tier 
+      - front-tier 
+
+  # Serviço Grafana para visualização de métricas.
+  grafana:
+    image: grafana/grafana 
+    user: "472"
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - ./config/grafana_datasources.yaml:/etc/grafana/provisioning/datasources/datasource.yaml:ro
+    networks:
+      - back-tier 
+      - front-tier 
+    restart: always
+

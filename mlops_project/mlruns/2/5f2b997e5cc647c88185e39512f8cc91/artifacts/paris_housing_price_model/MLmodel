@@ -1,0 +1,20 @@
+artifact_path: paris_housing_price_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.14.3
+model_size_bytes: 72838702
+model_uuid: e34782a27ef0444db586531a91d3d773
+run_id: 5f2b997e5cc647c88185e39512f8cc91
+utc_time_created: '2024-07-22 20:37:25.680074'

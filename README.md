@@ -1,6 +1,8 @@
 # MLOps Project: Property Price Forecast in Paris
 
-![image](https://github.com/user-attachments/assets/ac0f5f67-d585-42d1-9bae-62dcfce059d9)
+Available at: https://vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app.
+
+![image](https://github.com/user-attachments/assets/aafea5e0-72c8-4fef-ba8a-baf1e0f41333)
 
 This project has been developed as part of the MLOps Zoomcamp course provided by DataTalks.Club.
 Below you can find some instructions to understand the project content.

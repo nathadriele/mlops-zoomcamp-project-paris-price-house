@@ -15,23 +15,6 @@ The objective of this project is to predict housing prices in Paris based on var
 ### Project Description
 The project will be developed using a modern technology stack aligned with best MLOps practices. The project flow will involve data collection, data preparation, model building and training, model deployment, and monitoring. The tools will be integrated to ensure an efficient and scalable machine learning lifecycle.
 
-**Git**: Version control.
-**Visual Studio Code:** Development environment.
-**Jupyter Notebook:** Data exploration and visualization.
-**PostgreSQL:** Data storage.
-**Python:** Main programming language.
-**Pandas:** Data manipulation and analysis.
-**Matplotlib:** Data visualization.
-**Scikit-learn:** Machine learning modeling.
-**Flask:** Model deployment.
-**MLflow:** Experiment tracking.
-**Prefect:** For model orchestration
-**Docker:** Application containerization.
-**Anaconda:** Package and environment management.
-**Grafana:** Monitoring.
-
---------------------------------------------------
-
 ### Tech Stack
 
 <div style="display: inline_block"><br>
@@ -54,6 +37,26 @@ The project will be developed using a modern technology stack aligned with best 
       <img align="center" src="https://camo.githubusercontent.com/509859c3a417eb3ea794450d88303bdaced996cba60811e552e5a89bf89ff584/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f67726166616e612d2532334634363830302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d67726166616e61266c6f676f436f6c6f723d7768697465">
         <img align="center" src="https://camo.githubusercontent.com/b9ff564d8c311812747f1aacea54cf703d850756f9179f9eff6899da20a701a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f76657263656c2d2532333030303030302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d76657263656c266c6f676f436f6c6f723d7768697465">
       </div>
+
+### Frameworks used
+
+MlFlow - For Experiment Tracking, Model registry
+Prefect - For model orchestration
+Flask and Docker - For Deployment
+Grafana - For Drift detection and Monitoring
+
+cd into the project folder where 'mlflow.db' is located. Use the command mlflow ui --backend-store-uri sqlite:///mlflow.db to start the GUI for mlflow. You can view the dashboard in chrome browser at "http://127.0.0.1:5000" (default port) A dashboard as show below will be generated. The models tab allows the user for model versioning.
+
+![mlflow](https://github.com/user-attachments/assets/e3701b0c-521a-4c94-9b5e-282bb979a290)
+
+--------------------------------------------------
+
+### How to use Prefect for model orchestration?
+Set up an api to use PREFECT using the command prefect config set PREFECT_API_URL=http://127.0.0.1:4200/api Then, start the server using prefect server start This will start the UI at http://127.0.0.1:4200
+
+![prefect 2](https://github.com/user-attachments/assets/b51fb1f9-ca7c-4a85-8c14-fda1f64d826d)
+
+![prefect 1](https://github.com/user-attachments/assets/80ba1abd-ebe3-4886-98f3-328b84ba5cd9)
 
 --------------------------------------------------
 

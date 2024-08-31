@@ -221,12 +221,12 @@ The project is deployed on Vercel, making it easily accessible for users. The de
 
 ### How to Use app vercel Property Price Forecast in Paris
 
-- 1. Fill in all fields with property information, enter information about the property in the input fields provided in the interface. Only positive numbers are allowed.
-- 2. For fields where there is no information to be entered, they must be filled in with 0, indicating the absence.
-- 3. If any field is not filled in, clicking the "Estimate Price" button will return the alert "Please fill in all fields to get a forecast!"
-- 4. After filling in all the fields, click on the "Estimate Price" button to obtain the predicted price of the property.
-- 5. View the results, the predicted price will be displayed on the screen, providing an estimate based on the input data. Example: "Forecasted Price: €557642.1".
-- 6. Click on the "Clear Fields" button so that all fields are reset.
+**1.** Fill in all fields with property information, enter information about the property in the input fields provided in the interface. Only positive numbers are allowed.
+**2.** For fields where there is no information to be entered, they must be filled in with 0, indicating the absence.
+**3.** If any field is not filled in, clicking the "Estimate Price" button will return the alert "Please fill in all fields to get a forecast!"
+**4.** After filling in all the fields, click on the "Estimate Price" button to obtain the predicted price of the property.
+**5.** View the results, the predicted price will be displayed on the screen, providing an estimate based on the input data. Example: "Forecasted Price: €557642.1".
+**6.** Click on the "Clear Fields" button so that all fields are reset.
  
 #
 

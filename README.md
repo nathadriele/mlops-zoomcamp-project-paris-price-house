@@ -1,6 +1,7 @@
 # MLOps Project Property Price Forecast in Paris
 
-**Deployment URL**: https://vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app.
+### Deployment URL
+- https://vercel-app-mlops-zoomcamp-project-paris-price-house.vercel.app.
 
 ![gif](https://github.com/user-attachments/assets/9dc3cf89-8f41-470d-9008-83a695085926)
 

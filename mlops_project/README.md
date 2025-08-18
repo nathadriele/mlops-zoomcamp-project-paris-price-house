@@ -1,12 +1,9 @@
-**README.md**
-
-**Project Overview**
+## Project Overview
 ================
 
 This project is a machine learning workflow that trains a model on the Paris Housing dataset, deploys an API, and schedules a Prefect flow to run the model. The project uses MLflow to track experiments and store artifacts.
 
-**Getting Started**
----------------
+## Getting Started*
 
 ### Prerequisites
 

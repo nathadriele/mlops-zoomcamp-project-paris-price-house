@@ -52,7 +52,6 @@ def paris_house_price_prediction_flow():
     with mlflow.start_run() as run:
         model = train_housing_model(X_train_norm, y_train)
         
-        # Log de parâmetros e modelo no MLflow
         mlflow.log_params({
             "model_type": "RandomForestRegressor",
             "n_estimators": 100,

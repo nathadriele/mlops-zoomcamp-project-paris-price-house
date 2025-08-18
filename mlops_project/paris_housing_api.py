@@ -9,7 +9,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Configuração do MLflow
+# Configuração MLflow
 MLFLOW_TRACKING_URI = "http://127.0.0.1:5000"
 MODEL_RUN_ID = "7472c91377c24f92ac7d81c1b7d4cb89"
 mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)

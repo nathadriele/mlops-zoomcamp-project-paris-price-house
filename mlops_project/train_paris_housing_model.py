@@ -82,7 +82,7 @@ def main():
         # Avaliação do modelo
         model_metrics = calculate_model_metrics(housing_model, X_test_norm, y_test)
         
-        # Log de parâmetros, métricas e artefatos no MLflow
+        # Log de parâmetros com métricas e artefatos no MLflow
         mlflow.log_params({
             "model_type": "RandomForestRegressor",
             "n_estimators": 100,
